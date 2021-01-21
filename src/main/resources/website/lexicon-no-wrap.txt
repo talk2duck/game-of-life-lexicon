@@ -424,7 +424,7 @@ on 26 February 1999.
         ..................**.*...................
         ..................****...................
         ....................**...................
-        
+
 :2-glider collision:  Two gliders can react with each other in many different ways, either at right angles, or else head-on.  A large number of the reactions cleanly destroy both gliders leaving nothing.  Many of the remaining reactions cleanly create some common objects, and so are used as the first steps in {glider synthesis} or as part of constructing interesting objects using {rake}s.  Only a small number of collisions can be considered {dirty} due to creating multiple objects or a mess.
      Here is a list of the possible results along with how many different ways they can occur (ignoring reflections and rotations).
    -------------------------------
@@ -1296,7 +1296,7 @@ on 26 February 1999.
         ...........**...***........
         ..................*..*.....
         ...................*.......
-   Many known spaceships have multiple arms, usually fairly narrow.  This is an artefact of the search methods used to find such spaceships, rather than an indication of what a "typical" spaceship might look like.  
+   Many known spaceships have multiple arms, usually fairly narrow.  This is an artefact of the search methods used to find such spaceships, rather than an indication of what a "typical" spaceship might look like.
      For an alternate meaning see {construction arm}.
 
 :armless:  A method of generating {slow salvo}s across a wide range of lanes without using a {construction arm} with a movable {elbow}.  Instead, streams of gliders on two fixed opposing {lane}s collide with each other to produce clean 90-degree output gliders.  Slowing down one of the streams by 8N ticks will move the output lanes of the gliders toward the source of that stream by N {full diagonal}s.  This construction method was used to create the supporting slow salvos in the {half-baked knightship}s, and also in the {Parallel HBK gun}.
@@ -2686,7 +2686,7 @@ on 26 February 1999.
      It is often possible to use Catagolue search results find equivalent {glider synthesis} recipes for selected parts of long-running active reactions.  These random {soup} searches have made it possible to find efficient construction methods for thousands of increasingly rare {still life}s and {oscillator}s, and the occasional {puffer} or {spaceship}.  In many of these cases a {glider synthesis} was previously very difficult or unknown.
 
 :catalyst:  An object that participates in a reaction but emerges from it unharmed.  All {eater}s are catalysts.  Some small {still life}s can act as catalysts in some situations, such as the {block}, {ship}, and {tub}.  The still lifes and oscillators that form a {conduit} are examples of catalysts.
-     A relatively rare form of catalysis occurs in a {transparent debris effect}, where the catalyst in question is completely destroyed and then rebuilt.  The term is also sometimes used for a modification of an active reaction in a {rake} by passing {spaceship}s. 
+     A relatively rare form of catalysis occurs in a {transparent debris effect}, where the catalyst in question is completely destroyed and then rebuilt.  The term is also sometimes used for a modification of an active reaction in a {rake} by passing {spaceship}s.
 
 :catch and throw:  A {technology} used (e.g., in the {Caterpillar}) to adjust the timing of a glider by turning it into a stationary object using one interaction, and then later restoring it using a second interaction.  The interactions are caused by passing objects which are not otherwise affected.  The direction of the glider is not usually changed.
      Here is an example where a glider is turned into a {boat} by the first {LWSS}, and is then restored by the remaining {spaceship}s:
@@ -2796,7 +2796,7 @@ on 26 February 1999.
         ..............**....*.**.*
         ....................*.....
         ...................**.....
-        
+
 :CC semi-Snark:  A small 90-degree {colour-changing} {glider reflector} requiring two input gliders on the same lane for each output glider.  It was discovered by Sergei Petrov on 1 July 2013, using a custom-written search utility.  It functions as a very compact {period doubler} in some {signal} {circuit}ry, for example the {linear propagator}.  The semi-Snark can period-double a regular glider {stream} of period 51 or more, or an {intermittent stream} with two gliders every 67 ticks or more, since the block reset glider can be sent just 16 ticks before its partner.
         ......*..........**
         .......**........*.
@@ -3377,7 +3377,7 @@ on 26 February 1999.
         ...............................................................
         ...........**..................................................
         ...........**..................................................
-     At the end of 2017, Aidan F. Pierce discovered a clean {2-engine Cordership}.  There is also an adjustable-length 4-engine Cordership found by Michael Simkin, made up of two identical or mirror-image 2-engine components.  The leading pair of switch engines builds a block trail, which are then deleted by the trailing pair. 
+     At the end of 2017, Aidan F. Pierce discovered a clean {2-engine Cordership}.  There is also an adjustable-length 4-engine Cordership found by Michael Simkin, made up of two identical or mirror-image 2-engine components.  The leading pair of switch engines builds a block trail, which are then deleted by the trailing pair.
      Corderships generate {spark}s which can {perturb} other objects in many ways, especially gliders which can reach them from the side or from behind.  Some perturbations reflect gliders back the way they came, and can be used for constructions such as the {caber tosser} and the {infinite glider hotel}.
 
 :cousins: (p3)  This contains two copies of the {stillater} {rotor}.
@@ -3639,7 +3639,7 @@ on 26 February 1999.
         .*...............................
         **...............................
    If the Herschel and boat are removed from the above pattern, the glider passes cleanly through the circuit.  It can be used as the "0" output of a one-bit {memory cell}, where the 90-degree output would be the "1" output.  This was the method used to store presence or absence of neighbor {metacell}s in the {p1 megacell}.
-        
+
 :demuxer:  = {demultiplexer}
 
 :density:  The density of a pattern is the limit of the proportion of live cells in a (2n+1)x(2n+1) square centred on a particular cell as n tends to infinity, when this limit exists.  (Note that it does not make any difference what cell is chosen as the centre cell.  Also note that if the pattern is finite then the density is zero.)  There are other definitions of density, but this one will do here.
@@ -4805,7 +4805,7 @@ on 26 February 1999.
 
 :fuse:  A {wick} {burn}ing at one end.  For examples, see {baker}, {beacon maker}, {blinker ship}, {boat maker}, {cow}, {harvester}, {lightspeed wire}, {pi ship}, {reverse fuse}, {superstring} and {washerwoman}.  Useful fuses are usually {clean}, but see also {reburnable fuse}.
      A fuse can {burn} arbitrarily slowly, as demonstrated by the example {Blockic} fuse below.  A {signal}, alternating between {glider} and {MWSS} form, travels up and down between two rows of blocks in a series of {one-time} {turner} reactions.  The spacing shown here causes the fuse to burn 24 cells to the right every 240 generations, for a speed of c/10.  Moving the bottom half further from the top half by any even number of cells will slow down the burning even further.
-        .........**......................**...................... 
+        .........**......................**......................
         .........**......................**......................
         .........................................................
         .........................................................
@@ -5443,7 +5443,7 @@ on 26 February 1999.
         ..***.......*...
         ....*........***
         ...*...........*
-        
+
 
 :glider train:  A certain p64 c/2 orthogonal {puffer} that produces two rows of {block}s and two backward {glider} waves.  Ten of these were used to make the first {breeder}.
         ..............................*............
@@ -6138,7 +6138,7 @@ on 26 February 1999.
         ...................*...................*............
         ........................................***.........
         ..........................................*.........
-        
+
 :H-heptomino:  Name given by Conway to the following {heptomino}.  After one generation this is the same as the {I-heptomino}.
         **..
         .*..
@@ -8340,7 +8340,7 @@ on 26 February 1999.
 
 :omino:  = {polyomino}
 
-:omniperiodic:  A {cellular automaton} is said to be omniperiodic if it has {oscillator}s of all {period}s. It is not known if Life is omniperiodic, although this seems likely.  Dave Buckingham's work on Herschel conduits in 1996 (see {My Experience with B-heptominos in Oscillators}) left only a short list of unresolved cases, all with periods of 58 or below.  The list has been progressively reduced since then.  Most recently, period 43 and 53 oscillators were made possible in 2013 by Mike Playle's {Snark}.  As of June 2018, no oscillators are known for periods 19, 23, 38, or 41.  If we insist that the oscillator must be {non-trivial}, then 34 should be added to this list.  
+:omniperiodic:  A {cellular automaton} is said to be omniperiodic if it has {oscillator}s of all {period}s. It is not known if Life is omniperiodic, although this seems likely.  Dave Buckingham's work on Herschel conduits in 1996 (see {My Experience with B-heptominos in Oscillators}) left only a short list of unresolved cases, all with periods of 58 or below.  The list has been progressively reduced since then.  Most recently, period 43 and 53 oscillators were made possible in 2013 by Mike Playle's {Snark}.  As of June 2018, no oscillators are known for periods 19, 23, 38, or 41.  If we insist that the oscillator must be {non-trivial}, then 34 should be added to this list.
      Note that if we were to allow infinite oscillators, then all periods are certainly possible, as any period of 14 or more can be obtained using a {glider} (or {LWSS}) stream, or an infinitely long {2c/3} wire containing signals with the desired separation.
 
 :one per generation:  See {grow-by-one object}.
@@ -8612,7 +8612,7 @@ on 26 February 1999.
         .*......*......................
         ..*....*.......................
         ....**.........................
-        
+
 :p15 reflector:  An ambiguous term that may refer to {PD-pair reflector}, {p15 bouncer}, or the more recently discovered {p15 bumper}.
 
 :p184 gun:  A {true} period 184 {double-barrelled} glider gun found by Dave Buckingham in July 1996.  The {engine} in this gun is a {Herschel descendant}.  Unlike previous glider guns, the reaction flips on a diagonal so that both gliders travel in the same direction.
@@ -8918,7 +8918,7 @@ on 26 February 1999.
         ...................*..........................
         ...................**.........................
         ..................**..........................
-        .......**........**.............**.........**.     
+        .......**........**.............**.........**.
         ......*..*....*...*............*..*....*.****.
         ......*.*...***.***............*.*...***..*.*.
         .......*.........*..............*.............
@@ -9081,7 +9081,7 @@ on 26 February 1999.
         ..................*******.......................
         ..................*..*..*.......................
 
-:p46 gun:  A glider gun which has true-period 46.  The first one found was the {new gun} by Bill Gosper in 1971.  Prior to the discovery of {Tanner's p46} in October 2017, all known p46 guns were made from two or more {twin bees shuttle}s that interact (e.g., see {twin bees shuttle pair}). See {edge shooter} and {double-barrelled} for two more of these. 
+:p46 gun:  A glider gun which has true-period 46.  The first one found was the {new gun} by Bill Gosper in 1971.  Prior to the discovery of {Tanner's p46} in October 2017, all known p46 guns were made from two or more {twin bees shuttle}s that interact (e.g., see {twin bees shuttle pair}). See {edge shooter} and {double-barrelled} for two more of these.
      On 21 October 2017 Heinrich Koenig found a glider gun using two copies of {Tanner's p46} placed at right angles to each other.  This is the first p46 gun found which makes no use of the {twin bees shuttle}.
         ....**.............................
         .....*.............................
@@ -9304,7 +9304,7 @@ on 26 February 1999.
         *..*..*.*............*.......
         .....*..*.............***....
         ......**................*....
-        
+
 :p5 reflector:  Traditional name for {p5 bouncer} before 2016, but with the discovery of the {p5 bumper} this has become an ambiguous reference.
 
 :p60 gun:  A glider gun with a {true} period of 60.  The first one was found by Bill Gosper in 1970 and is shown below.
@@ -9539,7 +9539,7 @@ on 26 February 1999.
         ...*........*..*.*.*.*..*
         ***.............*...*....
         *........................
-        
+
 :p7 pipsquirter:  A {pipsquirter} oscillator found by Noam Elkies in August 1999, used in various {hassler}s and the colour-changing {p7 reflector}.
         ................*.....
         ........*.......*.....
@@ -9973,7 +9973,7 @@ on 26 February 1999.
 
 :period multiplier:  A term commonly used for a {pulse divider}, because dividing the number of {signal}s in a regular stream by N necessarily multiplies the {period} by N.  The term "period multiplier" can be somewhat misleading in this context, because most such circuits can accept input streams that are not strictly {periodic}.
      Reactions have also been found to period double or period triple the output of some {rake}s to create high-period rakes in a relatively small space (i.e., an exponential increase in period for a linear increase in size).
-     For {Herschel} signals and {glider gun}s, a number of small period doubler, tripler, and quadrupler mechanisms are known.  For example, the following {conduit} produces one output glider after accepting four input {B-heptomino}es, or four Herschels if a conduit such as {F117} is prepended that includes the same {BFx59H} converter. 
+     For {Herschel} signals and {glider gun}s, a number of small period doubler, tripler, and quadrupler mechanisms are known.  For example, the following {conduit} produces one output glider after accepting four input {B-heptomino}es, or four Herschels if a conduit such as {F117} is prepended that includes the same {BFx59H} converter.
         ....................*........................
         ....................***......................
         .......................*.....................
@@ -10155,7 +10155,7 @@ on 26 February 1999.
      Phase changing reactions have enabled the construction of spaceships having periods that were otherwise unknown, and also allow the construction of period-doubling and period-tripling {convoy}s to easily produce very high period rakes.
      See also {blinker puffer}.
 
-:phase shift = {phase change}
+:phase shift: = {phase change}
 
 :phi:  The following common {spark}.  The name comes from the shape in the generation after the one shown here.
         .***.
@@ -10612,7 +10612,7 @@ on 26 February 1999.
         --------------
      Attribution of these counts is given in {strict still life}; see also {https://oeis.org/A056613}.  The unique 32-bit {triple pseudo} still life is included in the last count in the table.  As the number of bits increases, the pseudo still life count goes up exponentially by approximately O(2.56^n).  By comparison, the rate for {strict still life}s is about O(2.46^n) while for {quasi still life}s it's around O(3.04^n).
      If a stable pattern's live cells plus its overpopulated dead cells do not form a single mutually adjacent group, the pattern is usually referred to as a {constellation}.  It is also a {still life} in the general sense, but is neither "pseudo" nor "strict".
-     
+
 :puffer:  An object that moves like a {spaceship}, except that it leaves debris behind.  The first known puffers were found by Bill Gosper and travelled at c/2 orthogonally (see diagram below for the very first one, found in 1971).
         .***......*.....*......***.
         *..*.....***...***.....*..*
@@ -11513,7 +11513,7 @@ on 26 February 1999.
         ....**.**....
         ...*.*.*.*...
         ....*...*....
-        
+
 
 :ring of fire: (p2)  The following {muttering moat} found by Dean Hickerson in September 1992.
         ................*.................
@@ -12586,7 +12586,7 @@ on 26 February 1999.
         ......................................................
         .............................***....................**
         .............................*.....................**.
-        ..............................*......................*    
+        ..............................*......................*
      Adam P. Goucher's {slmake} {search program}, made available in May 2017, makes it much easier to find a slow glider construction for a wide variety of {stable} {circuit}ry.
 
 :slow salvo:  See {slow glider construction}.
@@ -13209,7 +13209,7 @@ on 26 February 1999.
 :stator:  The cells of an {oscillator} that are always on.  Compare {rotor}.  (The stator is sometimes taken to include also some of those cells which are always off.)  The stator is divided into the {bushing} and the {casing}.
      By analogy, the cells of an {eater} that remain on even when the eater is eating are considered to constitute the stator of the eater. This is not always well-defined, because an eater can have more than one eating action.
 
-:statorless:  A statorless {oscillator} is one in which no cell is permanently on - that is, the {stator} is empty,  or in other words the oscillator has the maximum possible volatility.  See the {volatility} entry for examples of this type of oscillator at different periods.  Statorless oscillators can be constructed for any sufficiently large period, using {universal constructor} technology. 
+:statorless:  A statorless {oscillator} is one in which no cell is permanently on - that is, the {stator} is empty,  or in other words the oscillator has the maximum possible volatility.  See the {volatility} entry for examples of this type of oscillator at different periods.  Statorless oscillators can be constructed for any sufficiently large period, using {universal constructor} technology.
 
 :statorless p5: (p5)  Found by Josh Ball, June 2016.  The first and only known {statorless} {period} 5 {oscillator}.
         *.............*
@@ -14254,7 +14254,7 @@ on 26 February 1999.
         .......*.....*........*........*.....*........*....
         ......................*.......................*....
         .........***..........*..........***..........*....
-        
+
 :trans-beacon on table: (p2)
         ....**
         .....*
@@ -14532,10 +14532,10 @@ on 26 February 1999.
         ........***....*...........
         ........*..*..*..**........
         ..........**...**.*........
-        
+
 :trombone slide:  An arrangement of four 90-degree {reflector}s that can be placed into the path of a {glider} so as to delay it by an adjustable number of generations, without changing its {lane}.  More generally, any combination of {circuit}s may be referred to as a trombone slide, if the grouping can be moved as a single unit that functions as a 180-degree glider {reflector}.
      The smallest known trombone slides are made using {Snark}s.  In the trombone slide shown below, sample input and output gliders are shown.  The input glider will reach the same output location 128 generations sooner if the trombone slide is removed.
-     If the top and left Snarks are moved together diagonally to the upper left by N cells, then the glider delay is increased by 8N generations since the glider has to travel N more cells in each direction.  This sliding action gives the trombone slide its name.  If only the final Snark is moved, then the output glider's path can be altered by a number of full diagonals.  
+     If the top and left Snarks are moved together diagonally to the upper left by N cells, then the glider delay is increased by 8N generations since the glider has to travel N more cells in each direction.  This sliding action gives the trombone slide its name.  If only the final Snark is moved, then the output glider's path can be altered by a number of full diagonals.
         ......................**...**....................
         ......................**..*.***..................
         ..........................*....*.................
