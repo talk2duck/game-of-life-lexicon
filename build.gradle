@@ -30,5 +30,6 @@ compileTestKotlin {
 
 dependencies {
     implementation kotlin
+    implementation json
     testImplementation testing
 }

@@ -1,6 +1,8 @@
 package com.talk2duck.gameoflife
 
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.talk2duck.gameoflife.LexiconParser.parseLexicon
+import java.io.File
 import java.net.URL
 import java.util.regex.Pattern
 import java.util.regex.Pattern.DOTALL
@@ -49,7 +51,7 @@ object LexiconParser {
                     items.add(parseBoard(boardItems.joinToString("\n") { it.trim() }))
                     boardItems.clear()
                 }
-                items.add(Text(line.trim()))
+                items.add(Text(line.trimEnd()))
             }
         }
 
@@ -59,8 +61,6 @@ object LexiconParser {
 
         return Term(name, items)
     }
-
-
 
 
     private fun parseBoard(boardAscii: String): Board {
@@ -82,5 +82,10 @@ object LexiconParser {
 }
 
 fun main() {
-    println(parseLexicon(LexiconParser.javaClass.getResource("/website/lexicon-no-wrap.txt")))
+
+    val lexicon = parseLexicon(LexiconParser.javaClass.getResource("/website/lexicon-no-wrap.txt"))
+    val lexiconJson = jacksonObjectMapper().writeValueAsString(lexicon)
+    File("lexicon.json").printWriter().use { out ->
+        out.print(lexiconJson)
+    }
 }
