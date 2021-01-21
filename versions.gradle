@@ -1,0 +1,19 @@
+ext {
+    kotlin_version = '1.4.20'
+    junit_version = '5.7.0'
+
+    kotlin = [
+            "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    ]
+
+    kotlin_gradle_plugin = [
+            "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    ]
+
+    testing = [
+            "org.junit.jupiter:junit-jupiter-api:$junit_version",
+            "org.junit.jupiter:junit-jupiter-engine:$junit_version"
+    ]
+}
+1

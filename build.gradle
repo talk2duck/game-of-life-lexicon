@@ -1,0 +1,34 @@
+buildscript {
+    apply from: rootProject.file('versions.gradle')
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath kotlin_gradle_plugin
+    }
+}
+
+group 'com.talk2duck'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'kotlin'
+apply from: rootProject.file('versions.gradle')
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "11"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "11"
+}
+
+dependencies {
+    implementation kotlin
+    testImplementation testing
+}
